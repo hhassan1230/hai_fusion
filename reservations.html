@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  
+        <title>RESERVATIONS</title>
+            <link href="style.css" rel="stylesheet" type="text/css">
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,400,300,700' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!--yes, a map is a good idea-->
+
+                <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        #map-canvas {
+            width: 50%;
+            height: 300px;
+            background-color: #CCC;
+            margin-top:70px;
+        }
+    
+  .ui-menu { width: 150px; }
+
+    </style>            
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+  function initialize() {
+    var mapCanvas = document.getElementById('map-canvas');
+    var mapOptions = {
+      center: new google.maps.LatLng(21.273257, -157.823545),
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+  
+  var styles = [
+  {
+    stylers: [
+      { hue: "#00ffe6" },
+      { saturation: -20 }
+    ]
+  },{
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [
+      { lightness: 100 },
+      { visibility: "simplified" }
+    ]
+  },{
+    featureType: "road",
+    elementType: "labels",
+    stylers: [
+      { visibility: "on" }
+    ]
+  }
+];
+
+map.setOptions({styles: styles});
+}
+  google.maps.event.addDomListener(window, 'load', initialize);
+  
+    $(function() {
+    $( "#datepicker" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  });
+  
+    $(function() {
+    $( "#timepicker" ).menu();
+  });
+</script>
+
+<style>
+    #socialicons {
+        height: 40px;
+        width: 200px;
+        margin-top: -78px;
+        margin-left: 1050px;
+        display: inline;
+        float: right;
+}
+    
+    
+</style>
+
+</head>
+
+
+<body style="background-image: url('reservation.jpg'); ">      
+  
+    
+<!--  <i class="fa fa-twitter fa-2x"></i>
+   <cite class="fa fa-yelp fa-2x"></cite>
+   <b class= "fa fa-tumblr fa-2x"></b> -->
+            
+                  
+   
+   
+   <table width="100%" style="margin:0; padding:0;">
+       <tr>
+           <td style="padding-top:10px" align="left">
+                <table class="resnavmenu">
+                    <tr>
+                        <td>
+                            <div class="logonav">
+                              <a href="index.html"><div id="logo"><img src="http://i.imgur.com/VgJuBeM.png?1" title="source: imgur.com" /></div></a>
+                              <a class="resnavmenu" href="menu.html">Menu</a>
+                              <a class="resnavmenu" href="reservations.html">| &nbsp&nbsp&nbspReservations</a>
+                            </div>  
+                        </td>
+                    </tr>
+                </table>
+            <td align="right" style="padding-right:50px;">
+                <div class="socialboxx">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="socialicon"><i class="fa fa-twitter fa-2x"></i></div>
+                            </td>
+                            <td>
+                                <div class="socialicon"><cite class="fa fa-yelp fa-2x"></cite></div>
+                            </td>
+                            <td>
+                                <div class="socialicon"><b class= "fa fa-tumblr fa-2x"></b></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <p class="resnavmenu">Date: <input type="text" id="datepicker"></p>
+            </td>
+        </tr>
+        <tr style="margin-top:-50px;">
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <p class="resnavmenu">Time:</p>
+                        </td>
+                        <td>
+                            <ul id="timepicker">
+                                <li>7:00 PM</li>
+                                <li>7:30 PM</li>
+                                <li>9:00 PM</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+            <div id="map-canvas"></div>
+            </td>
+        </tr>
+    </table>
+   
+    
+    
+            <!--<p>Come find us at the seaside in Waikiki Beach!</p>-->
+            
+            <!--<p>2550 Kalakaua Avenue, Honolulu, HI 96815</p>-->
+            
+            <!--<p>808-555-1212</p>-->
+            
+            <!--<p>Hours: Monday through Thursday Friday Saturday Sunday</p>-->
+            <!--Let's decide on and add in our hours-->
+            
+            <!--<p>Reservations: www.opentable.com</p>
+            
+            
+            
+            <iframe id="googlemap" width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=2550+Kalakaua+Avenue,+Honolulu,+HI+96815&key=AIzaSyB42euJfVbSctwghIzQ44-mELVIPNyFFIo
+" allowfullscreen></iframe>
+            
+            
+            -->
+            <!-- <div id="mapbox"></div> -->
+            
+            
+            
+           
+            
+        </body>
+</html>
+

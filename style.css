@@ -1,0 +1,341 @@
+
+
+
+
+/******************** HOME PAGE ********************/
+
+body {
+    width: 100%;
+    height: 730px;
+    background-image: url('http://i.imgur.com/8sDQZkR.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+}
+
+/******* video *******/
+
+
+/**** logo ****/
+
+
+.logonav {
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+
+
+/**** nav reservation ****/
+
+
+
+/* #nav a {
+    font-size: 20px;
+    margin-left: 2px;
+    margin-top: -295px;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    color: white;
+    float: left;
+} */
+
+
+.resnavmenu a:hover {
+	color:rgb(232,177,12);
+}
+
+
+
+
+
+/**** nav menu ****/
+
+/* #navmenu a {
+    font-size: 20px;
+    margin-left: 135px;
+    margin-top: -295px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    color: white;
+    float: left;
+} */
+
+.resnavmenu {
+    font-size: 20px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    color: white;
+} 
+
+.resnavmenu a:hover {
+	color:rgb(232,177,12);
+}
+
+
+  
+  
+/* .insidebutton {
+    margin: -10px;
+} */
+
+  
+
+/* .button  {
+    border: none;
+    font-size: 30px;
+    padding: 10px 288px 73px 40px;
+    background-color: #00313F;
+    opacity: 0.8;
+    filter: alpha(opacity=100);
+    margin:auto;
+} */
+
+
+/* .button a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    float: left;
+    position: fixed;
+    margin-top: 15px;
+}  */
+
+
+/* #newbutton {  
+    border: none;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #00313F;
+    font-family: 'Roboto Condensed', sans-serif;
+    opacity: 0.8;
+    filter: alpha(opacity=100);
+    color:white;
+    width:290px;
+    padding:5px 2px 2px 5px;
+    margin:auto;
+} */
+/******* button ********/
+
+#welcomebutton {
+  margin-top: 190px;
+  margin-left: 490px;
+  height: 85px;
+  width: 275px;
+  background-color: green;
+  background-color:rgba(0,102,102,0.7)
+}
+
+#welcome {
+  margin-left: 73px;
+  margin-top: 40px;
+  padding-top: 20px;
+  color: white;
+  font-family:'Roboto Condensed', sans-serif;
+  font-size: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a hover: {
+    text-decoration: none;
+}
+
+/**** video ****/
+
+
+/* video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+} */
+
+/* video#bgvid {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(polina.jpg) no-repeat;
+background-size: cover;
+} */
+
+/*************social***************/
+
+.socialbox {
+    height: 40px;
+    width: 165px;
+    margin-top: -65px;
+    margin-right: 20px;
+    display: inline;
+    float: right;
+}
+
+
+.itwitter {
+    height: 25px;
+    width: 30px;
+    color: white;
+    margin-right: 10px;
+    margin-right: 25px;
+    display: inline;
+}
+
+
+ .citeyelp{
+    height: 25px;
+    width: 30px;
+    color: white;
+    display: inline;
+    margin-right: 30px;
+}
+
+ .btumblr {
+    height: 20px;
+    width: 25px;
+    color: white;
+    display: inline;
+    margin-right: 10px;
+}
+
+.socialicon {
+    height: 20px;
+    width: 25px;
+    color: white;
+    display: inline;
+    margin-right: 10px;
+}
+
+
+
+/* ---------------------MENU PAGE ONLY------------------*/
+
+#kbody{
+    background-image:url('lunch_in_the_cook_islands.jpg')
+
+}
+#klogo{
+    width:1000px;
+}
+
+/*.kheading{
+    text-decoration:none;
+    list-style-type:none;
+    background-color:pink;
+    width:303px;
+
+}
+.kheading a{
+    text-decoration:none;
+    color:white;
+    font-family:verdana;
+    font-weight:bold;
+    display:inline-block;
+    text-align:right;
+}*/
+.kright{
+    text-align:right;
+    display:inline-block;
+    width:220px;
+    margin-right:5px;
+    margin-left:615px;
+    position:absolute;
+    bottom:253px;
+    padding:5px 5px;
+    color:#FFB84D;
+    font-weight:bold;
+}
+.kright h1{
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+.kright a{
+    font-family:'Roboto Condensed', sans-serif;
+    text-decoration:none;
+    font-size:25px;
+    color:#FFFF19;
+}
+
+.kright a:hover{
+    background-color:orange;
+}
+.kright li{
+    list-style-type:none;
+}
+.kleft{
+    padding:0;
+    display:inline-block;
+    margin:50px 50px;
+    margin-top:48px;
+    
+}
+.kleft p{
+    display:inline-block;
+    width: 500px;
+    color: white;
+    word-spacing:8px;
+    font-size: 15px;
+    font-weight:normal;
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+
+/******************** RESERVATIONS PAGE ********************/
+
+/* 
+#reservationspage {
+    color: #FFCF80;
+    text-decoration: none;
+    float: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+} */
+
+/* iframe {
+    height: 400px;
+    width: 650px;
+    margin-left: 45px;
+    margin-top: 40px;
+}  */
+
+
+
+
+
+/********** footer **********/
+
+#footer {
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 210px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+
+
+
